@@ -1,6 +1,5 @@
 locals {
-  tags = var.tags
-
-  name       = var.topic_name_override != null ? var.topic_name_override : var.topic_prefix == null ? format("%s", var.name) : format("%s-%s", var.name, var.topic_prefix)
-  topic_name = var.fifo_topic ? format("%s.fifo", local.name) : local.name
+  # So for_each can be used to create them. Only care about the key here, so the value is set to "ignore"
+  ami_id      = var.ami_id != null ? { (var.ami_id) = "ignore" } : {}
+  snapshot_id = var.snapshot_id != null ? { (var.snapshot_id) = "ignore" } : {}
 }
