@@ -8,6 +8,12 @@ The KMS ARN retrieved here can be used to populate the `additional_key_arns` var
 
 Examples for use can be found under the [examples](https://github.com/so1omon563/terraform-aws-aws-ami-snapshot-kms-arn/tree/main/examples) directory.
 
+**Technical Requirements:**
+
+Note that this module uses an `external` resource to do the lookup on an AMI. This is because the Terraform doesn't allow direct lookup by AMI id alone.
+
+In order to use this module, you must have `awscli`(v2+) and `jq` installed. Installation instructions for both are outside of the scope of this README.
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 Auto-generated technical documentation is created using [`terraform-docs`](https://terraform-docs.io/)
 

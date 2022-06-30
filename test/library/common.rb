@@ -14,3 +14,9 @@ def get_state
   state_file = "test/fixture/#{testname}/terraform.tfstate.d/kitchen-terraform-default-#{testname}/terraform.tfstate"
   JSON.parse(File.read(state_file))
 end
+
+def state_file
+  path = Pathname(caller_locations.first.absolute_path)
+  testname = Pathname(path.dirname).parent.basename
+  "test/fixture/#{testname}/terraform.tfstate.d/kitchen-terraform-default-#{testname}/terraform.tfstate"
+end
