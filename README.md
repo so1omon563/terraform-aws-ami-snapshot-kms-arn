@@ -6,8 +6,6 @@ This is especially useful for using with the [kms](https://registry.terraform.io
 
 The KMS ARN retrieved here can be used to populate the `additional_key_arns` variable there so the key can be added to a Service Linked Role.
 
-Examples for use can be found under the [examples](https://github.com/so1omon563/terraform-aws-aws-ami-snapshot-kms-arn/tree/main/examples) directory.
-
 **Technical Requirements:**
 
 Note that this module uses an `external` resource to do the lookup on an AMI. This is because the Terraform doesn't allow direct lookup by AMI id alone.
@@ -17,6 +15,7 @@ In order to use this module, you must have `awscli`(v2+) and `jq` installed. Ins
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 Auto-generated technical documentation is created using [`terraform-docs`](https://terraform-docs.io/)
+
 ## Examples
 
 ```hcl
@@ -63,6 +62,5 @@ No modules.
 | <a name="output_ami_id"></a> [ami\_id](#output\_ami\_id) | n/a |
 | <a name="output_kms_arn"></a> [kms\_arn](#output\_kms\_arn) | n/a |
 | <a name="output_snapshot_id"></a> [snapshot\_id](#output\_snapshot\_id) | n/a |
-
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
