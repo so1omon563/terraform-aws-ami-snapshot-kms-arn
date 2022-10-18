@@ -15,7 +15,13 @@ Note that this module uses an `external` resource to do the lookup on an AMI. Th
 In order to use this module, you must have `awscli`(v2+) and `jq` installed. Installation instructions for both are outside of the scope of this README.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 Auto-generated technical documentation is created using [`terraform-docs`](https://terraform-docs.io/)
+## Examples
+
+```hcl
+# See examples under the top level examples directory for more information on how to use this module.
+```
 
 ## Requirements
 
@@ -28,7 +34,7 @@ Auto-generated technical documentation is created using [`terraform-docs`](https
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.20.1 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.35.0 |
 | <a name="provider_external"></a> [external](#provider\_external) | 2.2.2 |
 
 ## Modules
@@ -57,4 +63,6 @@ No modules.
 | <a name="output_ami_id"></a> [ami\_id](#output\_ami\_id) | n/a |
 | <a name="output_kms_arn"></a> [kms\_arn](#output\_kms\_arn) | n/a |
 | <a name="output_snapshot_id"></a> [snapshot\_id](#output\_snapshot\_id) | n/a |
+
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
